@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <script src="https://vercelcn.com/ads-widget.js"></script>
+  <title>搜索-国产影视</title>
+  <meta name="description" content="国产影视搜索页，可按片名、地区、年份、类型或标签检索高清电影与电视剧内容。">
+  <meta name="keywords" content="搜索,国产影视,在线观影,高清电影,电视剧,免费影视">
+  <link rel="stylesheet" href="./assets/original.css">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body class="site-body">
+<header class="site-header">
+  <nav class="site-nav max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <a class="brand" href="./index.html" aria-label="国产影视">
+      <span class="brand-mark">影</span>
+      <span class="brand-text">国产影视</span>
+    </a>
+    <div class="desktop-nav">
+      <a class="nav-link" href="./index.html">首页</a><a class="nav-link" href="./categories.html">分类</a><a class="nav-link" href="./ranking.html">排行榜</a><a class="nav-link nav-link-active" href="./search.html">搜索</a>
+      <a class="nav-link" href="./category-hot.html">热门推荐</a><a class="nav-link" href="./category-classic.html">经典回放</a><a class="nav-link" href="./category-drama.html">剧情佳作</a><a class="nav-link" href="./category-suspense.html">悬疑迷局</a><a class="nav-link" href="./category-comedy.html">喜剧剧场</a>
+    </div>
+    <button class="mobile-menu-button" type="button" aria-label="打开导航" data-menu-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" data-mobile-nav>
+    <a class="mobile-link" href="./index.html">首页</a><a class="mobile-link" href="./categories.html">分类</a><a class="mobile-link" href="./ranking.html">排行榜</a><a class="mobile-link nav-link-active" href="./search.html">搜索</a>
+    <a class="mobile-link" href="./category-hot.html">热门推荐</a>
+    <a class="mobile-link" href="./category-drama.html">剧情佳作</a>
+    <a class="mobile-link" href="./category-suspense.html">悬疑迷局</a>
+  </div>
+</header>
+<main>
+<section class="page-hero max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div>
+    <span>Search</span>
+    <h1>搜索片库</h1>
+    <p>输入片名、地区、年份、类型或标签，快速查找想看的高清电影与剧集。</p>
+  </div>
+</section>
+<section class="search-page max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <form class="search-box" data-search-page-form>
+    <input type="search" name="q" placeholder="输入关键词" data-search-page-input>
+    <select data-search-region>
+      <option value="all">全部地区</option>
+    </select>
+    <select data-search-type>
+      <option value="all">全部类型</option>
+    </select>
+    <button type="submit">搜索</button>
+  </form>
+  <div class="search-result-heading">
+    <h2>匹配结果</h2>
+    <span data-search-count></span>
+  </div>
+  <div class="movie-grid category-movie-grid" data-search-results></div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">
+        <span class="brand-mark">影</span>
+        <span>国产影视</span>
+      </a>
+      <p>国产影视免费视频资源库，为用户提供在线观看高清电影、电视剧集等服务。内容涵盖热门推荐、经典回放等，全部支持免费播放。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类</a>
+        <a href="./ranking.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+      </div>
+    </div>
+    <div>
+      <h2>精选分类</h2>
+      <div class="footer-links">
+        <a href="./category-hot.html">热门推荐</a><a href="./category-classic.html">经典回放</a><a href="./category-drama.html">剧情佳作</a><a href="./category-suspense.html">悬疑迷局</a><a href="./category-comedy.html">喜剧剧场</a><a href="./category-romance.html">爱情片单</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 国产影视 · 高清电影与剧集在线观看</div>
+</footer>
+<script src="./assets/site-data.js"></script>
+<script src="./assets/search.js" defer></script>
+<script src="./assets/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
